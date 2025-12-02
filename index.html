@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Christmas Tree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="toggleControls">⚙️</button>
+    <div id="controls">
+        <div class="control-group">
+            <label>Speed</label>
+            <input type="range" id="speed" min="0" max="0.1" step="0.001" value="0.01">
+        </div>
+        <div class="control-group">
+            <label>Size</label>
+            <input type="range" id="size" min="0.5" max="2" step="0.1" value="1">
+        </div>
+        <div class="control-group">
+            <label>Particles</label>
+            <input type="range" id="count" min="500" max="5000" step="100" value="2500">
+        </div>
+        <div class="control-group">
+            <label>Color</label>
+            <input type="range" id="color" min="0" max="360" step="1" value="0">
+        </div>
+    </div>
+    <canvas id="treeCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
